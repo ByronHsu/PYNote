@@ -10,4 +10,3 @@ def find_nb(m):
     		return -1
     	i = i + 1
 
-print(find_nb(1071225))
