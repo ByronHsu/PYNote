@@ -34,4 +34,21 @@ array = np.array([[1,2,3],[2,3,4]])
 - argmin(), argmax(), mean()
 	找整個矩陣中的最小值
 - cumsum(), diff(), nonzero()
+	累加, 差值, 非零元素
 - transpose(), clip()
+	轉置, 限制元素範圍
+	
+### Array合併&分割
+
+- concatenate
+
+```py
+np.concatenate((arr,arr,arr...), axis=)
+```
+
+- split
+
+```py
+np.split(arr, chunks, axis=)
+np.array_split //不等量
+```
