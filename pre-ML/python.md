@@ -33,4 +33,35 @@
 	```
 	
 	2. ``nonlocal``: 表明為非local變數, 不會再重新創建
-		
+
+### reference in python
+
+<img src = 'media/ref.png'>
+
+### sort and sorted
+
+``sorted()`` returns a new sorted list, leaving the original list unaffected. ``list.sort()`` sorts the list in-place, mutating the list indices, and returns None (like all in-place operations).
+
+### loop else
+Python中的for、while循环都有一个可选的else分支（类似if语句和try语句那样），在循环迭代正常完成之后执行。换句话说，如果我们不是以除正常方式以外的其他任意方式退出循环，那么else分支将被执行。
+
+```py
+for i in range(5):
+     print(i)
+else:
+     print('Iterated over everything :)')
+# 0
+# 1
+# 2
+# 3
+# 4
+# Iterated over everything :)
+for i in range(5):
+    if i == 2:
+        break
+    print(i)
+else:
+    print('Iterated over everything :)')
+# 0
+# 1
+```
