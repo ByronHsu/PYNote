@@ -65,3 +65,58 @@ else:
 # 0
 # 1
 ```
+
+### Queue, Priority queue, Deque
+
+- Queue
+```python
+# import
+from queue import Queue
+# init
+q = Queue()
+# push
+q = q.put(i)
+# pop
+q.get()
+# front
+q.queue[0]
+# size
+q.qsize()
+# empty
+q.empty()
+```
+- Priority queue
+```python
+# import
+from queue import PriorityQueue
+# init
+q = PriorityQueue()
+# push
+q = q.put(i)
+q = q.put(student(i)) # need to overload lt
+# pop
+q.get()
+# front
+q.queue[0]
+# size
+q.qsize()
+# empty
+q.empty()
+```
+- Deque
+```python
+from collections import deque
+d = deque()
+# 往右添加元素
+d.append(1)
+# 往左添加
+d.appendleft(1)
+# 清空
+d.clear()
+# 獲取右邊第一個元素並刪除
+d.pop()
+# 獲取左邊第一個元素並刪除
+d.popleft()
+# random access O(n) 其他為O(1)
+d[1]
+```
